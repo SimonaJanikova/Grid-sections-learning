@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(231, 234, 238);
+    height: auto;
+    font-size: 16px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    width: 100%;
+}
+
+
+.CardsContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    max-width: 1250px;
+    gap: 30px;
+    margin: 30px auto;
+}
+
+.DanielCard {
+    grid-column: span 2;
+    background-color: rgb(117, 65, 200);
+    color: rgb(231, 234, 238);
+    border-radius: 10px;
+    padding: 30px;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 82%;
+    background-size: 21%;
+}
+
+.UserInfo {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.TextInfo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgb(196, 162, 246);
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.text {
+    margin-top: 15px;
+    font-weight: 300;
+}
+
+.JonathanCard {
+    background-color: rgb(72, 85, 106);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.JeanetteCard {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: rgb(255, 255, 255);
+    color: rgb(25, 33, 46);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.PatrickCard{
+    grid-column: span 2;
+    grid-row: 2;
+    background-color: rgb(25, 33, 46);
+    color: rgb(207, 207, 207);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.KiraCard{
+    grid-column: 4;
+    grid-row: span 2;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+
+@media (max-width: 768px) {
+  .CardsContainer {
+    grid-template-columns: 1fr; /* Na mobil jeden stĺpec */
+    grid-template-rows: auto; 
+    width: 90%;
+  }
+
+  
+  .DanielCard,
+  .PatrickCard,
+  .JeanetteCard,
+  .KiraCard {
+    grid-column: span 1; /* Zruš špeciálne rozloženie */
+    grid-row: auto;
+  }
+}
