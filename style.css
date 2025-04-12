@@ -19,7 +19,7 @@ body {
     grid-template-rows: repeat(2, 1fr);
     max-width: 1250px;
     gap: 30px;
-    margin: 30px auto;
+    margin: 100px auto;
 }
 
 .DanielCard {
