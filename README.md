@@ -10,7 +10,7 @@ This is a static frontend project showcasing a testimonial cards layout using HT
 - Styled testimonial cards with avatars and quotes
 
 ## How to run
-Simply open the `index.html` file in your browser to view the project.
+https://simonajanikova.github.io/Grid-sections-learning/
 
 ## Technologies used
 - HTML5
